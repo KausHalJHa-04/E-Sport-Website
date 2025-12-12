@@ -1,6 +1,6 @@
 import axios from "axios";
 import Cookies from "js-cookie";
-const BaseUrl = "http://localhost:5000";
+const BaseUrl = "https://e-sport-website-backend.onrender.com";
 
 export const getAllProducts = async (
   name,
@@ -39,7 +39,7 @@ export const getAllProducts = async (
 
     const res = await axios.get(BaseUrl + "/product/all", params);
     return res.data.products;
-  } catch (error) {
+  } catch (err) {
     return [];
   }
 };

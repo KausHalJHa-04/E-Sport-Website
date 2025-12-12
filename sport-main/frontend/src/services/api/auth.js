@@ -1,7 +1,7 @@
 import axios from "axios"
 import Cookies from "js-cookie"
 
-const BaseUrl = "http://localhost:5000"
+const BaseUrl = "https://e-sport-website-backend.onrender.com"
 
 export const loginUser = async (email, password) => {
   try {
